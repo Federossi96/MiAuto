@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drovez Cars - Sell Your Car</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Drovez Cars</h1>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coches.html">Inventory</a></li>
+                    <li><a href="vender.html">Sell Your Car</a></li>
+                    <li><a href="#" id="toggle-favorites">Favorites (<span id="fav-count">0</span>)</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="material-icons">menu</i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url('https://placehold.co/1200x400?text=Sell+Your+Car');">
+            <div class="container">
+                <h1>Sell Your Car</h1>
+                <p>Get a free valuation and sell with ease.</p>
+            </div>
+        </section>
+
+        <section class="sell-form container">
+            <h2>Tell Us About Your Car</h2>
+            <form id="sell-car-form">
+                <input type="text" name="marca" placeholder="Make" required>
+                <input type="text" name="modelo" placeholder="Model" required>
+                <input type="number" name="anio" placeholder="Year" min="2000" max="2025" required>
+                <input type="number" name="kilometros" placeholder="Mileage" min="0" required>
+                <input type="text" name="combustible" placeholder="Fuel Type" required>
+                <input type="number" name="precio" placeholder="Asking Price (€)" min="0" required>
+                <button type="submit" class="btn btn-primary">Get Valuation</button>
+            </form>
+            <p id="sell-result">Enter details to get an estimated value.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h3>Drovez Cars</h3>
+                <p>Your trusted partner in car buying and selling.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coches.html">Inventory</a></li>
+                    <li><a href="vender.html">Sell Your Car</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p>Email: info@drovezcars.com</p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

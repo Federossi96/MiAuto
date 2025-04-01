@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drovez Cars - Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Drovez Cars</h1>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coches.html">Inventory</a></li>
+                    <li><a href="vender.html">Sell Your Car</a></li>
+                    <li><a href="#" id="toggle-favorites">Favorites (<span id="fav-count">0</span>)</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="material-icons">menu</i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url('https://placehold.co/1200x600?text=Hero+Image');">
+            <div class="container">
+                <h1>Find Your Perfect Ride</h1>
+                <p>Discover a curated selection of premium used cars.</p>
+                <a href="coches.html" class="btn btn-primary">Browse Inventory</a>
+            </div>
+        </section>
+
+        <section class="services container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Buy a Car</h3>
+                    <p>Explore our extensive inventory of high-quality vehicles.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Sell Your Car</h3>
+                    <p>Get a fair valuation and sell your car quickly.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Financing</h3>
+                    <p>Flexible financing options to suit your needs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured container">
+            <h2>Featured Vehicles</h2>
+            <div class="car-grid" id="featured-cars"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h3>Drovez Cars</h3>
+                <p>Your trusted partner in car buying and selling.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coches.html">Inventory</a></li>
+                    <li><a href="vender.html">Sell Your Car</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p>Email: info@drovezcars.com</p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

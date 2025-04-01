@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drovez Cars - Inventory</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Drovez Cars</h1>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coches.html">Inventory</a></li>
+                    <li><a href="vender.html">Sell Your Car</a></li>
+                    <li><a href="#" id="toggle-favorites">Favorites (<span id="fav-count">0</span>)</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="material-icons">menu</i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url('https://placehold.co/1200x400?text=Inventory+Hero');">
+            <div class="container">
+                <h1>Our Inventory</h1>
+                <p>Browse our collection of premium used vehicles.</p>
+            </div>
+        </section>
+
+        <section class="filters container">
+            <form id="search-form" class="filter-form">
+                <input type="text" id="marca" name="marca" placeholder="Make">
+                <input type="number" id="precio-min" name="precioMin" placeholder="Min Price (€)" min="0">
+                <input type="number" id="precio-max" name="precioMax" placeholder="Max Price (€)" min="0">
+                <input type="number" id="km-max" name="kmMax" placeholder="Max Mileage" min="0">
+                <input type="number" id="year" name="year" placeholder="Min Year" min="2000" max="2025">
+                <select id="sort" name="sort">
+                    <option value="">Sort By</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="km-asc">Mileage: Low to High</option>
+                    <option value="km-desc">Mileage: High to Low</option>
+                    <option value="year-asc">Year: Old to New</option>
+                    <option value="year-desc">Year: New to Old</option>
+                </select>
+                <button type="submit" class="btn btn-primary">Search</button>
+                <button type="button" id="clear-filters" class="btn btn-secondary">Reset</button>
+                <button type="button" id="save-search" class="btn btn-secondary">Guardar búsqueda</button>
+
+            </form>
+        </section>
+
+        <section class="inventory container" id="car-list"></section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h3>Drovez Cars</h3>
+                <p>Your trusted partner in car buying and selling.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coches.html">Inventory</a></li>
+                    <li><a href="vender.html">Sell Your Car</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p>Email: info@drovezcars.com</p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="quick-view-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">×</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-img" src="" alt="">
+            <p id="modal-price"></p>
+            <p id="modal-specs"></p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

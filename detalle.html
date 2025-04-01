@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drovez Cars - Vehicle Details</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Drovez Cars</h1>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coches.html">Inventory</a></li>
+                    <li><a href="vender.html">Sell Your Car</a></li>
+                    <li><a href="#" id="toggle-favorites">Favorites (<span id="fav-count">0</span>)</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="material-icons">menu</i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="car-hero" id="car-hero">
+            <div class="container">
+                <h1 id="car-title">Loading...</h1>
+                <p id="car-price" class="price">-</p>
+            </div>
+        </section>
+
+        <section class="car-detail container">
+            <div class="car-gallery">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img class="carousel-item active" id="main-img" src="https://placehold.co/800x500" alt="Vehicle">
+                        <img class="carousel-item" src="https://placehold.co/800x500?text=Interior" alt="Interior">
+                        <img class="carousel-item" src="https://placehold.co/800x500?text=Side" alt="Side">
+                    </div>
+                    <button class="carousel-control prev">&lsaquo;</button>
+                    <button class="carousel-control next">&rsaquo;</button>
+                </div>
+            </div>
+
+            <div class="car-info">
+                <div class="car-specs">
+                    <h2>Vehicle Specs</h2>
+                    <ul>
+                        <li><strong>Year:</strong> <span id="spec-year">-</span></li>
+                        <li><strong>Age:</strong> <span id="spec-age">-</span></li>
+                        <li><strong>Mileage:</strong> <span id="spec-km">-</span> km</li>
+                        <li><strong>Fuel Type:</strong> <span id="spec-fuel">-</span></li>
+                        <li><strong>Engine:</strong> <span id="spec-engine">-</span></li>
+                        <li><strong>Power:</strong> <span id="spec-power">-</span> HP</li>
+                        <li><strong>Transmission:</strong> <span id="spec-transmission">-</span></li>
+                        <li><strong>Color:</strong> <span id="spec-color">-</span></li>
+                    </ul>
+                </div>
+
+                <div class="car-actions">
+                    <button class="btn btn-primary contact-btn">Contact Seller</button>
+                    <button class="btn btn-secondary add-fav" data-id="">Add to Favorites</button>
+                    <button class="btn btn-secondary compare-btn" data-id="">Compare</button>
+                    <button class="btn btn-secondary share-btn" data-id=""><i class="material-icons">share</i> Share</button>
+                </div>
+
+                <div class="car-description">
+                    <h2>About This Vehicle</h2>
+                    <p>This premium vehicle offers a perfect blend of performance and luxury. With its sleek design and advanced technology, it’s ideal for those who demand the best. Well-maintained and ready for its next owner.</p>
+                </div>
+
+                <div class="car-features">
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li>Leather Interior</li>
+                        <li>Navigation System</li>
+                        <li>Premium Sound System</li>
+                        <li>Adaptive Cruise Control</li>
+                        <li>Panoramic Sunroof</li>
+                    </ul>
+                </div>
+                <div class="finance-calculator">
+                    <h3>Calcula tu financiación</h3>
+                    <input type="number" id="finance-amount" placeholder="Monto (€)" value="" disabled>
+                    <input type="number" id="finance-term" placeholder="Plazo (meses)" min="12" max="60">
+                    <button id="calc-finance" class="btn btn-secondary">Calcular</button>
+                    <p id="finance-result">Resultado: -</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h3>Drovez Cars</h3>
+                <p>Your trusted partner in car buying and selling.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coches.html">Inventory</a></li>
+                    <li><a href="vender.html">Sell Your Car</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p>Email: info@drovezcars.com</p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

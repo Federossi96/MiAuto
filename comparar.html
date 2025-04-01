@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drovez Cars - Comparar</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo"><h1>Drovez Cars</h1></div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coches.html">Inventory</a></li>
+                    <li><a href="vender.html">Sell Your Car</a></li>
+                    <li><a href="favoritos.html">Favorites (<span id="fav-count">0</span>)</a></li>
+                    <li><a href="comparar.html">Compare (<span id="compare-count">0</span>)</a></li>
+                </ul>
+                <div class="menu-toggle"><i class="material-icons">menu</i></div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url('https://placehold.co/1200x400?text=Comparar');">
+            <div class="container">
+                <h1>Comparar Autos</h1>
+                <p>Compara hasta 3 autos lado a lado.</p>
+            </div>
+        </section>
+        <section class="compare container" id="compare-list"></section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h3>Drovez Cars</h3>
+                <p>Your trusted partner in car buying and selling.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coches.html">Inventory</a></li>
+                    <li><a href="vender.html">Sell Your Car</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p>Email: info@drovezcars.com</p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/compare.js"></script>
+</body>
+</html>
